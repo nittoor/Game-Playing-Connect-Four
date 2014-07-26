@@ -11,12 +11,19 @@ Alice and Bill are playing the game, and it is Alice’s turn to take next move.
 Then program will take the current board configuration as input.
 The input file path will be given as a command-line
 parameter (see grading). The input will always be valid. For example (input.txt):
+
 e
+
 abba
+
 baa
+
 e
+
 abbaab
+
 ab
+
 b
 
 This input is “rotated sideways” to make scanning it easier. In other words, each line of
@@ -48,17 +55,29 @@ printout of your minimax tree. It is achieved by traversing all possible search 
 the next 4 moves using minimax algorithm with alpha-beta pruning. Below is a sample
 output, but is just an arbitrary example and is not necessarily correct (in fact, most of
 the time there will be 7 actions, one for each column):
+
 A1: 2
+
 |-B2: 2
+
 |-|-A3: 1
+
 |-|-|-B4: 2; h=0
+
 |-|-|-B4: 3; h=5
+
 |-|-A3: 3
+
 |-|-|-B4: 4; h=0
+
 |-|-A3: pruning 4, 5, 6, 7; alpha=1, beta=1
+
 |-B2: 3; h = 1000
+
 A1: 3
+
 ...
+
 first move: 3
 
 The interpretations are:
