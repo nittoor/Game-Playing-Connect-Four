@@ -5,7 +5,7 @@ CFLAGS = -c $(DEBUG)
 LFLAGS = $(DEBUG)
 
 assign2 : $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -o assign2
+	$(CC) $(LFLAGS) $(OBJS) -o program
 	
 Source.o : Source.cpp
 	$(CC) $(CFLAGS) Source.cpp
@@ -17,4 +17,4 @@ Board.o : Board.h Board.cpp
 	$(CC) $(CFLAGS) Board.cpp
 
 clean:
-	\rm *.o assign2
+	\rm *.o program
